@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Jaguer M1 Hybrid",
+    "img": "https://i.ibb.co/fnvbbp9/car-1.jpg",
+    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "price": 16000,
+    "quantity": 90,
+    "supplier": "Jaguer"
+  },
+  {
+    "id": 2,
+    "name": "Audi A8 Hybrid",
+    "img": "https://i.ibb.co/1LzggbT/car-2.jpg",
+    "desc": "With a Herculean 443-horsepower rating and 516 lb-ft of torque mustered from its 3.0-liter turbocharged V6 engine and its sidekicks, a 14.1 kWh battery pack and electric motor, it's nearly as quick as the standard V8-powered A8",
+    "price": 17000,
+    "quantity": 90,
+    "supplier": "Audi"
+  },
+  {
+    "id": 3,
+    "name": "Mercedez Benz E",
+    "img": "https://i.ibb.co/hBgZv1L/car-3.jpg",
+    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "price": 16500,
+    "quantity": 90,
+    "supplier": "Mercedez"
+  },
+  {
+    "id": 4,
+    "name": "Jaguer M1 Hybrid",
+    "img": "https://i.ibb.co/P519Z0G/car-4.jpg",
+    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "price": 18300,
+    "quantity": 90,
+    "supplier": "Jaguer"
+  },
+  {
+    "id": 5,
+    "name": "Audi A8 Hybrid",
+    "img": "https://i.ibb.co/fnvbbp9/car-1.jpg",
+    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "price": 15400,
+    "quantity": 90,
+    "supplier": "Jaguer"
+  },
+  {
+    "id": 6,
+    "name": "Bugatti Venon",
+    "img": "https://i.ibb.co/fnvbbp9/car-1.jpg",
+    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "price": 19900,
+    "quantity": 90,
+    "supplier": "Bugatti"
+  }
+]
