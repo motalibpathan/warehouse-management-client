@@ -14,13 +14,25 @@ const Header = () => {
         className="no-underline text-gray-800 font-semibold hover:text-gray-600"
         to="/about"
       >
-        About Me
+        About us
       </Link>
       <Link
         className="no-underline text-gray-800 font-semibold hover:text-gray-600"
         to="/blogs"
       >
         Blogs
+      </Link>
+      <Link
+        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+        to="/blogs"
+      >
+        Cars
+      </Link>
+      <Link
+        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+        to="/blogs"
+      >
+        Services
       </Link>
       {!user && (
         <>
