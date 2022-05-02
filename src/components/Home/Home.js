@@ -19,7 +19,7 @@ const Home = () => {
         </div>
         <div className="mt-7 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {inventories.map((car) => (
-            <Inventory key={car.id} car={car} />
+            <Inventory key={car._id} car={car} />
           ))}
         </div>
       </div>

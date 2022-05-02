@@ -57,7 +57,7 @@ const Header = () => {
           </span>
           <button
             onClick={() => signOut(auth)}
-            className="no-underline text-gray-800 font-semibold md:px-7 md:bg-rose-500 bg-white py-2 md:text-white rounded-md"
+            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
           >
             Sign out
           </button>
