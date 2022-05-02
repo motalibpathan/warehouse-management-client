@@ -2,6 +2,12 @@ import React from "react";
 
 const Inventory = ({ car }) => {
   const { img, name, desc, price, quantity, supplier } = car;
+  let bgColor;
+  if (quantity > 50) {
+    bgColor = "bg-green-200";
+  } else {
+    bgColor = "bg-red-200";
+  }
   return (
     <div className="group shadow-lg rounded-md overflow-hidden md:my-0 my-7 border-2">
       <div className="w-full h-[300px] overflow-hidden">
@@ -19,7 +25,7 @@ const Inventory = ({ car }) => {
         <p className="text-xl font-bold my-2">
           Price: $ <span className="text-red-500 ">{price}</span>
         </p>
-        <p className="bg-red-200 rounded-full py-1 px-5 inline-block">
+        <p className={`${bgColor} rounded-full py-1 px-5 inline-block`}>
           Quantity: {quantity}
         </p>
       </div>

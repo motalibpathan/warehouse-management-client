@@ -9,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import auth from "../../firebase.init";
 import LoginImg from "../../images/car-login.jpg";
 import Loading from "../Loading/Loading";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -95,6 +96,7 @@ const Login = () => {
               </Link>{" "}
               instead.
             </p>
+            <SocialLogin />
           </div>
         </div>
       </div>

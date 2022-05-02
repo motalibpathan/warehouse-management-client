@@ -67,7 +67,7 @@ const Header = () => {
   );
 
   return (
-    <div className="shadow-xl">
+    <div className="shadow-md">
       <div className="md:container mx-auto ">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center">
