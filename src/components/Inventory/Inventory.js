@@ -3,7 +3,7 @@ import React from "react";
 const Inventory = ({ car }) => {
   const { img, name, desc, price, quantity, supplier } = car;
   return (
-    <div className="group shadow-lg rounded-md overflow-hidden">
+    <div className="group shadow-lg rounded-md overflow-hidden md:my-0 my-7 border-2">
       <div className="w-full h-[300px] overflow-hidden">
         <div
           style={{ backgroundImage: `url(${img})` }}
@@ -25,7 +25,7 @@ const Inventory = ({ car }) => {
       </div>
       <div className="flex justify-center">
         <button className="py-2 px-7 mt-2 mb-4 bg-red-500 text-white rounded-md border-2 border-red-500 hover:bg-white hover:text-red-500 duration-500">
-          Mange Quantity
+          Stock Update
         </button>
       </div>
     </div>

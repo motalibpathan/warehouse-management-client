@@ -22,7 +22,7 @@ const Footer = () => {
       className="w-full bg-cover bg-center mt-14 text-white"
     >
       <div className="w-full  bg-gray-900 bg-opacity-90">
-        <div className="md:container mx-auto p-5 md:grid grid-cols-12 ">
+        <div className="md:container mx-auto p-5 md:grid md:grid-cols-6 lg:grid-cols-12 ">
           <div className="col-span-3 mt-5">
             <img
               width={200}
@@ -91,20 +91,20 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-span-4 mt-5">
+          <div className="md:col-span-3 lg:col-span-4 mt-5">
             <h1 className="font-bold text-2xl mb-7">Subscribe Us</h1>
-            <div className=" relative w-3/5">
+            <div className=" relative md:w-4/5 w-full">
               <input
                 className="py-3 px-5 rounded-full w-full bg-gray-600 outline-0"
                 type="email"
                 placeholder="Your Email"
               />
-              <span className="right-1 top-1 absolute py-2 px-5 bg-red-500 rounded-full cursor-pointer">
+              <button className="right-1 top-1 absolute py-2 px-7 bg-red-500 rounded-full cursor-pointer">
                 <FontAwesomeIcon icon={faArrowRight} />
-              </span>
+              </button>
             </div>
 
-            <ul className="flex space-x-5 mt-5">
+            <ul className="flex space-x-5 mt-5 md:justify-start justify-center">
               <li>
                 <FontAwesomeIcon
                   className="bg-blue-500 rounded-full p-2 w-7 h-7 hover:cursor-pointer"

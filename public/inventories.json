@@ -30,7 +30,7 @@
     "id": 4,
     "name": "Jaguer M1 Hybrid",
     "img": "https://i.ibb.co/P519Z0G/car-4.jpg",
-    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "desc": "Most comfortable seats for the second and third row , Loaded with luxury features like rear touchscreens, dual, sunroof and VIP seats.Innovative boot space solutions Lots of space inside the cabin",
     "price": 18300,
     "quantity": 90,
     "supplier": "Jaguer"
@@ -39,7 +39,7 @@
     "id": 5,
     "name": "Audi A8 Hybrid",
     "img": "https://i.ibb.co/fMSXC1L/car-5.jpg",
-    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "desc": "Funky styling still gets attention. Lots of modification potential too! Playful chassis and steering makes it quite a hoot to drive. New features such as cruise control and coloured MID make it a better package.",
     "price": 15400,
     "quantity": 90,
     "supplier": "Jaguer"
@@ -48,9 +48,27 @@
     "id": 6,
     "name": "Bugatti Venon",
     "img": "https://i.ibb.co/Jc11rnc/car-6.jpg",
-    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "desc": "Spacious interior Well built on the inside and out. Fitment quality feels premium now Well-loaded features list, Refined and enjoyable to use petrol engine, Comfortable ride quality even over bad roads",
     "price": 19900,
     "quantity": 90,
     "supplier": "Bugatti"
+  },
+  {
+    "id": 7,
+    "name": "Tata Harrier",
+    "img": "https://i.ibb.co/gJgFsQw/car-7.jpg",
+    "desc": "Mileage (upto)17.0 kmpl, Engine (upto) 1956 cc, BHP 167.67, TransmissionManual/Automatic, 5 Seats, Boot Space 425",
+    "price": 19900,
+    "quantity": 90,
+    "supplier": "Tata"
+  },
+  {
+    "id": 8,
+    "name": "Kia Sportage",
+    "img": "https://i.ibb.co/QQQMd0p/car-8.jpg",
+    "desc": "Strong engine options, including a plug-in hybrid; green Standard adaptive air suspension delivers a comfortable; green Exceptional rear passenger space",
+    "price": 19900,
+    "quantity": 90,
+    "supplier": "Kia"
   }
 ]
