@@ -1,6 +1,6 @@
 import React from "react";
 import useInventories from "../../hooks/useInventories";
-import Inventory from "../Inventory/Inventory";
+import Car from "../Car/Car";
 import Slider from "../Slider/Slider";
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
         </div>
         <div className="mt-7 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {inventories.map((car) => (
-            <Inventory key={car._id} car={car} />
+            <Car key={car._id} car={car} />
           ))}
         </div>
       </div>

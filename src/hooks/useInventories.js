@@ -2,17 +2,18 @@ import { useEffect, useState } from "react";
 
 const useInventories = (size) => {
   const [inventories, setInventories] = useState([]);
-  let url;
-  if (size) {
-    url = `http://localhost:5000/inventory?size=${size}`;
-  } else {
-    url = `http://localhost:5000/inventory`;
-  }
+
   useEffect(() => {
+    let url;
+    if (size) {
+      url = `http://localhost:5000/inventory?size=${size}`;
+    } else {
+      url = `http://localhost:5000/inventory`;
+    }
     fetch(url)
       .then((res) => res.json())
       .then((data) => setInventories(data));
-  }, [url]);
+  }, [size]);
 
   return [inventories, setInventories];
 };
