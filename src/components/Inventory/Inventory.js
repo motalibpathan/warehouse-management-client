@@ -21,6 +21,14 @@ const Inventory = () => {
       .then((data) => setInventory(data));
   }, [id]);
 
+  const handleDelivered = (id) => {
+    if (inventory.quantity < 1) {
+      toast.warning("stock out!");
+    } else {
+      updateQuantity(id, 1, true);
+    }
+  };
+
   const handleRestock = (e) => {
     e.preventDefault();
     let newStock = e.target.quantity.value;
@@ -90,7 +98,7 @@ const Inventory = () => {
           </p>
 
           <button
-            onClick={() => updateQuantity(id, 1, true)}
+            onClick={() => handleDelivered(id)}
             className="py-2 px-7 mt-2 mb-4 bg-red-500 text-white rounded-md border-2 border-red-500 hover:bg-white hover:text-red-500 duration-500"
           >
             Delivered

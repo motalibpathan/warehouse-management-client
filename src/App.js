@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Inventory from "./components/Inventory/Inventory";
 import Login from "./components/Login/Login";
+import ManageInventories from "./components/ManageInventories/ManageInventories";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import SignUp from "./components/SignUp/SignUp";
 
@@ -24,6 +25,7 @@ function App() {
             </RequireAuth>
           }
         />
+        <Route path="/manage-inventories" element={<ManageInventories />} />
       </Routes>
       <Footer />
       <ToastContainer />
