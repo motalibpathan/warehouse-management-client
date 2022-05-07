@@ -40,6 +40,12 @@ const Header = () => {
           >
             Add Inventory
           </Link>
+          <Link
+            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            to="/my-inventories"
+          >
+            My Inventories
+          </Link>
           <span className="font-bold">
             {userIcon} {user?.displayName}
           </span>

@@ -1,12 +1,14 @@
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const InventoryTableData = ({
   inventory,
   isMobileView,
   handleDeleteInventory,
 }) => {
+  const navigate = useNavigate();
   return isMobileView ? (
     <>
       <h1 className="font-bold">Name: {inventory.name}</h1>
@@ -15,10 +17,17 @@ const InventoryTableData = ({
       <p className="my-1">Quantity: {inventory.quantity}</p>
       <p>Sold: {inventory.sold}</p>
       <button
-        onClick={() => handleDeleteInventory(inventory._id)}
-        className="bg-red-500 rounded-full h-8 w-8 mt-2"
+        className="px-3 py-2 bg-green-500 text-white rounded-md mt-2"
+        onClick={() => navigate(`/inventory/${inventory._id}`)}
       >
-        <FontAwesomeIcon className="text-white" icon={faTrash} />
+        Manage
+      </button>
+      <button
+        onClick={() => handleDeleteInventory(inventory._id)}
+        className="px-3 py-2 bg-red-500 text-white rounded-md ml-3 mt-2"
+      >
+        Delete
+        <FontAwesomeIcon className="text-white ml-2" icon={faTrash} />
       </button>
     </>
   ) : (
@@ -28,12 +37,21 @@ const InventoryTableData = ({
       <td>{inventory.price}</td>
       <td>{inventory.quantity}</td>
       <td>{inventory.sold}</td>
-      <td>
+      <td className="w-32">
+        <button
+          className="px-3 py-2 bg-green-300 rounded-md"
+          onClick={() => navigate(`/inventory/${inventory._id}`)}
+        >
+          Manage
+        </button>
+      </td>
+      <td className="w-36 pr-3">
         <button
           onClick={() => handleDeleteInventory(inventory._id)}
-          className="bg-red-500 rounded-full h-8 w-8"
+          className="bg-red-500 rounded-md text-white px-7 py-2"
         >
-          <FontAwesomeIcon className="text-white" icon={faTrash} />
+          Delete
+          <FontAwesomeIcon className="text-white ml-2" icon={faTrash} />
         </button>
       </td>
     </>

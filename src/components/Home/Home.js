@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 import useInventories from "../../hooks/useInventories";
 import Car from "../Car/Car";
 import Slider from "../Slider/Slider";
+import DataLoading from "../DataLoading/DataLoading";
 
 const Home = () => {
-  const [inventories] = useInventories(6);
+  const [inventories, , dataIsLoading] = useInventories(6);
   const navigate = useNavigate();
 
   return (
@@ -13,12 +14,12 @@ const Home = () => {
       <Slider />
       <div className="md:container mx-auto mt-10 p-5">
         <h1 className="md:text-4xl text-2xl font-bold">Latest Collection</h1>
-
         <div className="mt-7 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {inventories.map((car) => (
             <Car key={car._id} car={car} />
           ))}
         </div>
+        {dataIsLoading && <DataLoading />}
         <div className="flex justify-center">
           <button
             onClick={() => navigate("/manage-inventories")}

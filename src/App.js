@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import Inventory from "./components/Inventory/Inventory";
 import Login from "./components/Login/Login";
 import ManageInventories from "./components/ManageInventories/ManageInventories";
+import MyInventories from "./components/MyInventories/MyInventories";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import SignUp from "./components/SignUp/SignUp";
 
@@ -26,8 +27,30 @@ function App() {
             </RequireAuth>
           }
         />
-        <Route path="/manage-inventories" element={<ManageInventories />} />
-        <Route path="/add-inventory" element={<AddInventory />} />
+        <Route
+          path="/manage-inventories"
+          element={
+            <RequireAuth>
+              <ManageInventories />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/add-inventory"
+          element={
+            <RequireAuth>
+              <AddInventory />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/my-inventories"
+          element={
+            <RequireAuth>
+              <MyInventories />
+            </RequireAuth>
+          }
+        />
       </Routes>
       <Footer />
       <ToastContainer />
