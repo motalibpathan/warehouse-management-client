@@ -7,6 +7,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 import SignUpImg from "../../images/car-register.jpg";
+import { getAccessToken } from "../../utilities/utilities";
 import Loading from "../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
 
@@ -29,6 +30,7 @@ const SignUp = () => {
     if (password === confirmPassword) {
       await createUserWithEmailAndPassword(email, password);
       await updateProfile({ displayName: name });
+      getAccessToken(email);
     } else {
       toast.error("Password and confirm password does not matched");
     }

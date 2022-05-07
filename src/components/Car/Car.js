@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Car = ({ car }) => {
   const navigate = useNavigate();
   const { _id, img, name, desc, price, quantity, supplier, sold } = car;
-  console.log(car);
+
   let bgColor;
   if (quantity > 50) {
     bgColor = "bg-green-200";
