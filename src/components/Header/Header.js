@@ -10,30 +10,6 @@ const Header = () => {
 
   const navLinks = (
     <>
-      <Link
-        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
-        to="/about"
-      >
-        About us
-      </Link>
-      <Link
-        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
-        to="/blogs"
-      >
-        Blogs
-      </Link>
-      <Link
-        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
-        to="/blogs"
-      >
-        Cars
-      </Link>
-      <Link
-        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
-        to="/blogs"
-      >
-        Services
-      </Link>
       {!user && (
         <>
           <Link
@@ -52,6 +28,18 @@ const Header = () => {
       )}
       {user && (
         <>
+          <Link
+            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            to="/manage-inventories"
+          >
+            Manage Inventories
+          </Link>
+          <Link
+            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            to="/add-inventory"
+          >
+            Add Inventory
+          </Link>
           <span className="font-bold">
             {userIcon} {user?.displayName}
           </span>
