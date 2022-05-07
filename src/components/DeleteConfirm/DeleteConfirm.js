@@ -1,6 +1,6 @@
 import React from "react";
 
-const DeleteConfirm = ({ setConfirmOpen }) => {
+const DeleteConfirm = ({ setConfirmOpen, handleDelete }) => {
   return (
     <div className="fixed bg-gray-900 bg-opacity-50 top-0 min-h-screen w-full flex justify-center items-center">
       <div className=" rounded-md p-5 md:w-[500px]">
@@ -25,7 +25,10 @@ const DeleteConfirm = ({ setConfirmOpen }) => {
             >
               No
             </button>
-            <button className="bg-green-500 px-7 py-2 rounded text-white">
+            <button
+              onClick={() => handleDelete()}
+              className="bg-green-500 px-7 py-2 rounded text-white"
+            >
               Yes
             </button>
           </div>
