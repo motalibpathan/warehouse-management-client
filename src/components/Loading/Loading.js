@@ -2,7 +2,7 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div className="left-0 top-0 z-10 absolute w-full h-screen flex justify-center items-center bg-gray-900 bg-opacity-80">
+    <div className="left-0 top-0 z-10 fixed w-full h-screen flex justify-center items-center bg-gray-900 bg-opacity-80">
       <LoadingSvg />
     </div>
   );
