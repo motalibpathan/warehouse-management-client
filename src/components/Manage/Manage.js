@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import DeleteConfirm from "../DeleteConfirm/DeleteConfirm";
 import InventoryTableData from "../InventoryTableData/InventoryTableData";
 import Loading from "../Loading/Loading";
@@ -17,9 +18,12 @@ const Manage = ({ inventories, setInventories }) => {
   const handleDelete = () => {
     setLoading(true);
     setConfirmOpen(false);
-    fetch(`https://enigmatic-harbor-04768.herokuapp.com/${selectedId}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://enigmatic-harbor-04768.herokuapp.com/inventory/${selectedId}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -28,6 +32,7 @@ const Manage = ({ inventories, setInventories }) => {
         );
         setInventories(remaining);
         setLoading(false);
+        toast.success("Successfully deleted");
       });
   };
 

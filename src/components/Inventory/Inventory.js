@@ -88,6 +88,7 @@ const Inventory = () => {
             <img className="w-full rounded" src={inventory.img} alt="" />
           </div>
           <div className="md:w-3/5 w-full">
+            <h1 className="font-bold text-xl">id: {inventory._id}</h1>
             <h1 className="font-bold text-3xl">{inventory.name}</h1>
             <p className="my-2">
               Supplier: <span className="font-bold">{inventory.supplier}</span>

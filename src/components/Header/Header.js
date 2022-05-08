@@ -31,7 +31,7 @@ const Header = () => {
             onClick={() => signOut(auth)}
             className="no-underline text-gray-800 font-semibold hover:text-red-500"
           >
-            Sign out
+            Logout
           </button>
         </>
       )}

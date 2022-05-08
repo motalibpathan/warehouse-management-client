@@ -83,7 +83,7 @@ const SignUp = () => {
               <input
                 className="w-full p-3 bg-red-500 text-white mt-3 rounded cursor-pointer"
                 type="submit"
-                value="Login"
+                value="Signup"
               />
             </form>
             {error && <p className="text-red-500 pt-3">{error.message}</p>}

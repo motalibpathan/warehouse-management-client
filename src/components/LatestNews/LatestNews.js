@@ -23,9 +23,7 @@ const LatestNews = () => {
   ];
   return (
     <div className="lg:w-4/5  mx-auto p-5 w-full">
-      <h1 className="text-4xl font-bold my-9 text-center">
-        This is latest news
-      </h1>
+      <h1 className="text-4xl font-bold my-9 text-center">Latest news</h1>
       <div className="md:grid lg:grid-cols-3 md:grid-cols-2 gap-7">
         {newsData.map((news) => (
           <div key={news.id} className=" rounded-md shadow-xl pb-7 group">
