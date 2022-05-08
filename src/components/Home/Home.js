@@ -4,6 +4,7 @@ import useInventories from "../../hooks/useInventories";
 import Car from "../Car/Car";
 import DataLoading from "../DataLoading/DataLoading";
 import Feature from "../Feature/Feature";
+import LatestNews from "../LatestNews/LatestNews";
 import Slider from "../Slider/Slider";
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
         </div>
       </div>
       <Feature />
+      <LatestNews />
     </>
   );
 };
