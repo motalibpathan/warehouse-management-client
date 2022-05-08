@@ -1,6 +1,6 @@
 # Car Max
 
-## Live site link []()
+## Live site link [https://warehouse-management-85499.web.app/](https://warehouse-management-85499.web.app/)
 
 ### This website is a car inventory management website. This website has home page, login page, signup page, Manage Inventories page, Add Inventory page and My Inventory page. Also have blogs and about page.
 
