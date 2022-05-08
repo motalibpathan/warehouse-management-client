@@ -1,3 +1,27 @@
+# Car Max
+
+## Live site link []()
+
+### This website is a car inventory management website. This website has home page, login page, signup page, Manage Inventories page, Add Inventory page and My Inventory page. Also have blogs and about page.
+
+## Features and Functionalities
+
+- In Home page displayed 6 inventories (car) with some information like image, title, short description, price and quantity and a button for stock update.
+- The stock update button navigate the inventory page here also some information of clicked inventory and has a button delivered. Delivered button will reduce quantity 1. Also has a input box and a button for add quantity.
+- In Manage Inventory page displayed all inventories and has a delete button for delete and manage button for manage quantities.
+- In Add Inventory page user can add inventory
+- In my inventory page displaying the current user added inventories.
+- User can sigup using email and password, also can signin using google singin method
+
+## Technology used
+
+- React Js
+- Tailwind CSS
+- Firebase
+- React Router Dom v6
+- React Firebase Hooks
+- React Toastify
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
