@@ -24,7 +24,7 @@ const Header = () => {
           <CustomLink to="/manage-inventories">Manage Inventories</CustomLink>
           <CustomLink to="/add-inventory">Add Inventory</CustomLink>
           <CustomLink to="/my-inventories">My Inventories</CustomLink>
-          <span className="font-bold">
+          <span className="font-bold md:hidden lg:inline inline">
             {userIcon} {user?.displayName}
           </span>
           <button

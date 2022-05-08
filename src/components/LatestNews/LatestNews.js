@@ -10,19 +10,19 @@ const LatestNews = () => {
     },
     {
       id: 2,
-      title: "This non-slip toll mat might your garage",
+      title: "This non-slip toll mat might in your garage",
       desc: " S&B Tool trays are made of a premium silicone that lasts longer and looks better. It won't crack over time, has exceptional tear strength, and can handle ...",
       img: "https://i.ibb.co/5vLLSTm/bike-blog-7.jpg",
     },
     {
       id: 3,
-      title: "Main reasons to buy luxury car in 2022",
+      title: "Main reasons to buy a new luxury car in 2022",
       desc: "It is true that the value of a car depreciates with time and mileage. However, the resale value of luxury cars depreciates at a steady pace than new average or ...",
       img: "https://i.ibb.co/c8tS3xN/bike-blog-8.jpg",
     },
   ];
   return (
-    <div className="lg:w-3/5 md:container mx-auto p-5 w-full">
+    <div className="lg:w-4/5  mx-auto p-5 w-full">
       <h1 className="text-4xl font-bold my-9 text-center">
         This is latest news
       </h1>
