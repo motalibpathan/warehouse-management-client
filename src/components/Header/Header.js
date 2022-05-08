@@ -10,6 +10,18 @@ const Header = () => {
 
   const navLinks = (
     <>
+      <Link
+        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+        to="/about"
+      >
+        About
+      </Link>
+      <Link
+        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+        to="/blogs"
+      >
+        Blogs
+      </Link>
       {!user && (
         <>
           <Link

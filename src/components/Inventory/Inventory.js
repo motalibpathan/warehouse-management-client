@@ -11,7 +11,7 @@ const Inventory = () => {
   const [dataLoading, setDataLoading] = useState(false);
 
   let bgColor;
-  if (inventory.quantity > 50) {
+  if (inventory.quantity > 10) {
     bgColor = "bg-green-200";
   } else {
     bgColor = "bg-red-200";

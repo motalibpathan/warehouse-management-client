@@ -6,7 +6,7 @@ const Car = ({ car }) => {
   const { _id, img, name, desc, price, quantity, supplier, sold } = car;
 
   let bgColor;
-  if (quantity > 50) {
+  if (quantity > 10) {
     bgColor = "bg-green-200";
   } else {
     bgColor = "bg-red-200";
