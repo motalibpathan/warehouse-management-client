@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
+import CustomLink from "../CustomLink/CustomLink";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,54 +11,19 @@ const Header = () => {
 
   const navLinks = (
     <>
-      <Link
-        className="no-underline text-gray-800 font-semibold hover:text-red-600"
-        to="/about"
-      >
-        About
-      </Link>
-      <Link
-        className="no-underline text-gray-800 font-semibold hover:text-red-600"
-        to="/blogs"
-      >
-        Blogs
-      </Link>
+      <CustomLink to="/about">About</CustomLink>
+      <CustomLink to="/blogs">Blogs</CustomLink>
       {!user && (
         <>
-          <Link
-            className="no-underline text-gray-800 font-semibold hover:text-red-500"
-            to="/login"
-          >
-            Login
-          </Link>
-          <Link
-            className="no-underline text-gray-800 font-semibold hover:text-red-500"
-            to="/signup"
-          >
-            Sign up
-          </Link>
+          <CustomLink to="/login">Login</CustomLink>
+          <CustomLink to="/signup">Sign up</CustomLink>
         </>
       )}
       {user && (
         <>
-          <Link
-            className="no-underline text-gray-800 font-semibold hover:text-red-500"
-            to="/manage-inventories"
-          >
-            Manage Inventories
-          </Link>
-          <Link
-            className="no-underline text-gray-800 font-semibold hover:text-red-500"
-            to="/add-inventory"
-          >
-            Add Inventory
-          </Link>
-          <Link
-            className="no-underline text-gray-800 font-semibold hover:text-red-500"
-            to="/my-inventories"
-          >
-            My Inventories
-          </Link>
+          <CustomLink to="/manage-inventories">Manage Inventories</CustomLink>
+          <CustomLink to="/add-inventory">Add Inventory</CustomLink>
+          <CustomLink to="/my-inventories">My Inventories</CustomLink>
           <span className="font-bold">
             {userIcon} {user?.displayName}
           </span>
