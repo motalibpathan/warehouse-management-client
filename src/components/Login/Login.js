@@ -3,7 +3,7 @@ import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../firebase.init";
@@ -91,11 +91,15 @@ const Login = () => {
                 Reset Password
               </button>
             </p>
+
             <p className="pt-3">
               New to Carmax?{" "}
-              <Link className="text-red-500 underline" to={"/signup"}>
-                Sign up
-              </Link>{" "}
+              <button
+                onClick={() => navigate("/signup", { state: location.state })}
+                className="text-red-500 underline mr-2"
+              >
+                Sign up{" "}
+              </button>
               instead.
             </p>
             <SocialLogin />

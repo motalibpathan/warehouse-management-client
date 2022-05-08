@@ -19,7 +19,6 @@ const SignUp = () => {
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
-  console.log(from);
 
   const handleLogin = async (event) => {
     event.preventDefault();

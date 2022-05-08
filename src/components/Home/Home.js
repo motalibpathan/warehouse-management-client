@@ -2,8 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import useInventories from "../../hooks/useInventories";
 import Car from "../Car/Car";
-import Slider from "../Slider/Slider";
 import DataLoading from "../DataLoading/DataLoading";
+import Feature from "../Feature/Feature";
+import Slider from "../Slider/Slider";
 
 const Home = () => {
   const [inventories, , dataIsLoading] = useInventories(6);
@@ -29,6 +30,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <Feature />
     </>
   );
 };

@@ -11,13 +11,13 @@ const Header = () => {
   const navLinks = (
     <>
       <Link
-        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+        className="no-underline text-gray-800 font-semibold hover:text-red-600"
         to="/about"
       >
         About
       </Link>
       <Link
-        className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+        className="no-underline text-gray-800 font-semibold hover:text-red-600"
         to="/blogs"
       >
         Blogs
@@ -25,13 +25,13 @@ const Header = () => {
       {!user && (
         <>
           <Link
-            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            className="no-underline text-gray-800 font-semibold hover:text-red-500"
             to="/login"
           >
             Login
           </Link>
           <Link
-            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            className="no-underline text-gray-800 font-semibold hover:text-red-500"
             to="/signup"
           >
             Sign up
@@ -41,19 +41,19 @@ const Header = () => {
       {user && (
         <>
           <Link
-            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            className="no-underline text-gray-800 font-semibold hover:text-red-500"
             to="/manage-inventories"
           >
             Manage Inventories
           </Link>
           <Link
-            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            className="no-underline text-gray-800 font-semibold hover:text-red-500"
             to="/add-inventory"
           >
             Add Inventory
           </Link>
           <Link
-            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            className="no-underline text-gray-800 font-semibold hover:text-red-500"
             to="/my-inventories"
           >
             My Inventories
@@ -63,7 +63,7 @@ const Header = () => {
           </span>
           <button
             onClick={() => signOut(auth)}
-            className="no-underline text-gray-800 font-semibold hover:text-gray-600"
+            className="no-underline text-gray-800 font-semibold hover:text-red-500"
           >
             Sign out
           </button>

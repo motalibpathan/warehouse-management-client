@@ -81,9 +81,8 @@ const Inventory = () => {
   return (
     <>
       {loading && <Loading />}
-      {dataLoading ? (
-        <DataLoading />
-      ) : (
+      {dataLoading && <DataLoading />}
+      {inventory._id && (
         <div className="md:container mx-auto p-5 md:flex md:space-x-10 md:space-y-0 space-y-5 mt-7">
           <div className="md:w-2/5 w-full">
             <img className="w-full rounded" src={inventory.img} alt="" />
@@ -130,6 +129,11 @@ const Inventory = () => {
             </form>
           </div>
         </div>
+      )}
+      {!loading && !inventory._id && (
+        <h1 className="text-center text-2xl font-bold mt-5">
+          Not Found by this id
+        </h1>
       )}
     </>
   );
