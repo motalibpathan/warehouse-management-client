@@ -29,7 +29,7 @@ const AddInventory = () => {
       sold: 0,
     };
 
-    fetch(`http://localhost:5000/inventory`, {
+    fetch(`https://enigmatic-harbor-04768.herokuapp.com/inventory`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -8,9 +8,9 @@ const useInventories = (size) => {
     setDataIsLoading(true);
     let url;
     if (size) {
-      url = `http://localhost:5000/inventory?size=${size}`;
+      url = `https://enigmatic-harbor-04768.herokuapp.com/inventory?size=${size}`;
     } else {
-      url = `http://localhost:5000/inventory`;
+      url = `https://enigmatic-harbor-04768.herokuapp.com/inventory`;
     }
     fetch(url)
       .then((res) => res.json())

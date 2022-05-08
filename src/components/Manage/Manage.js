@@ -17,7 +17,7 @@ const Manage = ({ inventories, setInventories }) => {
   const handleDelete = () => {
     setLoading(true);
     setConfirmOpen(false);
-    fetch(`http://localhost:5000/inventory/${selectedId}`, {
+    fetch(`https://enigmatic-harbor-04768.herokuapp.com/${selectedId}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

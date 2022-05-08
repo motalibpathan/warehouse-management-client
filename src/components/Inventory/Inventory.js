@@ -19,7 +19,7 @@ const Inventory = () => {
 
   useEffect(() => {
     setDataLoading(true);
-    fetch(`http://localhost:5000/inventory/${id}`)
+    fetch(`https://enigmatic-harbor-04768.herokuapp.com/inventory/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setInventory(data);
@@ -60,7 +60,7 @@ const Inventory = () => {
       newSold = +inventory.sold;
     }
 
-    fetch(`http://localhost:5000/inventory/${id}`, {
+    fetch(`https://enigmatic-harbor-04768.herokuapp.com/inventory/${id}`, {
       method: "PATCH",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ quantity: newQuantity, sold: newSold }),
@@ -130,9 +130,9 @@ const Inventory = () => {
           </div>
         </div>
       )}
-      {!loading && !inventory._id && (
+      {!dataLoading && !inventory._id && (
         <h1 className="text-center text-2xl font-bold mt-5">
-          Not Found by this id
+          Inventory not Found by this id
         </h1>
       )}
     </>

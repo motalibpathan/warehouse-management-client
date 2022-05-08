@@ -14,7 +14,7 @@ const MyInventories = () => {
 
   useEffect(() => {
     setDataLoading(true);
-    const url = `http://localhost:5000/inventoryByEmail?email=${user.email}`;
+    const url = `https://enigmatic-harbor-04768.herokuapp.com/inventoryByEmail?email=${user.email}`;
     fetch(url, {
       headers: {
         authorization: `Bearer ${localStorage.getItem("access-token")}`,
